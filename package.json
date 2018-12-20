@@ -33,7 +33,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop --host $(ifconfig | awk '/inet 192\\.168\\.[0-9]+\\.[0-9]+/{print $2}') --port 8000",
+    "develop": "gatsby develop",
     "forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0",
     "forestry:publish": "gatsby build --prefix-paths",
     "start": "npm run develop",
