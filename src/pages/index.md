@@ -50,7 +50,7 @@ blocks:
   title: Create Your Own Gatsby Site
   subtitle: Use our quick start to import this demo into Forestry
   button:
-    url: "/"
+    url: https://app.forestry.io/quick-start?repo=forestryio/gatsby-starter-forestry&branch=master&engine=gatsby
     text: Get Started
 
 ---

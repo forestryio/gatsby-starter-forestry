@@ -17,11 +17,11 @@ This demo is heavily influenced by Gatsby's [tutorial for using markdown](https:
 
 ## How to Use This With Forestry
 
-1. [Fork this repo to your GitHub, GitLab, or Bitbucket userspace](/)
+1. [Fork this repo to your GitHub, GitLab, or Bitbucket userspace](https://github.com/forestryio/gatsby-starter-forestry)
 2. [Sign up for a Forestry account](https://app.forestry.io/signup)
 3. Click the **Add Site** button, connect to your Git provider, and select the repo you just forked to begin the import process.
 
-Alternatively, you can have Forestry copy and import this project for your with our [quick start](/).
+Alternatively, you can have Forestry copy and import this project for your with our [quick start](https://app.forestry.io/quick-start?repo=forestryio/gatsby-starter-forestry&branch=master&engine=gatsby).
 
 ## About Forestry
 
