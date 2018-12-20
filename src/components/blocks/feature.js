@@ -27,11 +27,13 @@ const Feature = ({ block }) => (
             )}
           </div>
           <div className="column is-one-half">
-            <h1 className="title is-3">{block.title}</h1>
-            <div
-              className="content"
-              dangerouslySetInnerHTML={{ __html: block.content }}
-            />
+            <div class="section">
+              <h1 className="title is-3">{block.title}</h1>
+              <div
+                className="content"
+                dangerouslySetInnerHTML={{ __html: block.content }}
+              />
+            </div>
           </div>
         </div>
       </div>
