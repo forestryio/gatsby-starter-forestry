@@ -1,0 +1,38 @@
+---
+label: block__3col
+hide_body: false
+is_partial: true
+display_field: title
+fields:
+- type: text
+  name: component
+  label: component
+  hidden: true
+  default: 3col
+- type: text
+  name: title
+  label: Title
+- type: field_group
+  name: col1
+  label: Column 1
+  fields:
+  - type: include
+    name: col1
+    label: col1
+    template: column
+- type: field_group
+  name: col2
+  label: Column 2
+  fields:
+  - type: include
+    name: col2
+    label: col2
+    template: column
+- type: field_group
+  name: col3
+  label: Column 3
+  fields:
+  - type: include
+    name: col3
+    label: col3
+    template: column

@@ -1,0 +1,46 @@
+---
+label: block__feature
+hide_body: false
+is_partial: true
+display_field: title
+fields:
+- type: text
+  name: component
+  label: component
+  hidden: true
+  default: feature
+- type: text
+  name: title
+  label: Title
+- type: textarea
+  name: content
+  label: Content
+  config:
+    wysiwyg: true
+    schema:
+      format: html
+- type: file
+  name: image
+  label: Image
+- type: select
+  name: background
+  config:
+    source:
+      type: simple
+    options:
+    - transparent
+    - primary
+    - dark
+    - light
+  label: Background
+  default: primary
+- type: select
+  name: orientation
+  config:
+    source:
+      type: simple
+    options:
+    - normal
+    - reverse
+  label: Orientation
+  default: normal

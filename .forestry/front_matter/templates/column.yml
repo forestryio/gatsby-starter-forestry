@@ -1,0 +1,19 @@
+---
+label: column
+hide_body: false
+is_partial: true
+display_field: title
+fields:
+- type: file
+  name: image
+  label: Image
+- type: text
+  name: title
+  label: Title
+- type: textarea
+  name: content
+  label: Content
+  config:
+    wysiwyg: true
+    schema:
+      format: html

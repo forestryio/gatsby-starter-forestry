@@ -1,0 +1,36 @@
+---
+label: Site Config
+hide_body: 
+is_partial: 
+fields:
+- name: pathPrefix
+  label: Pathprefix
+  type: text
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: description
+  label: Description
+  type: textarea
+  hidden: false
+  default: ''
+- name: copyright
+  label: Copyright
+  type: field_group
+  fields:
+  - name: name
+    label: Name
+    type: text
+    hidden: false
+    default: ''
+  - name: url
+    label: Url
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''

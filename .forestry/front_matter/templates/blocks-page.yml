@@ -1,0 +1,23 @@
+---
+label: Blocks Page
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: text
+  hidden: true
+  label: Template
+  name: template
+  default: blocks
+- type: blocks
+  name: blocks
+  label: Blocks
+  template_types:
+  - block__hero
+  - block__feature
+  - block__3col
+  - block__cta
+pages:
+- src/pages/index.md

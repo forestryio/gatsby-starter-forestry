@@ -1,0 +1,29 @@
+---
+label: block__hero
+hide_body: false
+is_partial: true
+display_field: title
+fields:
+- type: text
+  name: component
+  label: component
+  hidden: true
+  default: hero
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: subtitle
+  label: Subtitle
+- type: select
+  name: background
+  config:
+    source:
+      type: simple
+    options:
+    - transparent
+    - primary
+    - light
+    - dark
+  label: Background
+  default: transparent

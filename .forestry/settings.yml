@@ -1,0 +1,41 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- type: directory
+  path: src/pages
+  label: Pages
+  create: documents
+  match: "*.md"
+  new_doc_ext: md
+  templates:
+  - page
+  - blocks-page
+- type: directory
+  path: src/pages/posts
+  label: Posts
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - post
+- type: document
+  path: src/data/main_menu.json
+  label: Nav Menu
+- type: document
+  path: site-config.json
+  label: Site Config
+upload_dir: src/images
+public_path: "/src/images"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+custom_preview: true
+build:
+  preview_command: npm run forestry:preview
+  publish_command: npm run forestry:publish
+  preview_env:
+  - GATSBY_WEBPACK_PUBLICPATH=/
+  output_directory: public
