@@ -4,7 +4,7 @@ import React from 'react'
 import Navbar from './navbar'
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className="site-header">
     <section className="navigation">
       <Navbar siteTitle={siteTitle} />
     </section>

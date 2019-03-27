@@ -18,8 +18,8 @@ class SingleTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <section className="section article-header has-text-centered">
-          <div className="container">
+        <section className="section page-content">
+          <div className="container article-header has-text-centered">
             <h1 className="title is-1">{post.frontmatter.title}</h1>
             {post.frontmatter.date && (
               <em className="is-size-6 has-text-grey">
@@ -27,8 +27,6 @@ class SingleTemplate extends React.Component {
               </em>
             )}
           </div>
-        </section>
-        <section className="section page-content">
           <main className="container content-container">
             <div
               className="content"

@@ -23,7 +23,7 @@ class Navbar extends Component {
       >
         <div className="navbar-brand">
           <Link
-            className="navbar-item is-size-4 has-text-weight-semibold"
+            className="navbar-item has-text-weight-semibold"
             to="/"
           >
             {this.props.siteTitle}
@@ -52,48 +52,46 @@ class Navbar extends Component {
             this.state.navbarOpen ? 'navbar-menu is-active' : 'navbar-menu'
           }
         >
-          <div className="container">
-            <div className="navbar-start">
-              <StaticQuery
-                query={graphql`
-                  {
-                    allMainMenuJson {
-                      edges {
-                        node {
-                          id
-                          type
-                          url
-                          title
-                        }
+          <div className="navbar-start">
+            <StaticQuery
+              query={graphql`
+                {
+                  allMainMenuJson {
+                    edges {
+                      node {
+                        id
+                        type
+                        url
+                        title
                       }
                     }
                   }
-                `}
-                render={data =>
-                  data.allMainMenuJson.edges.map(edge => {
-                    return edge.node.type === 'internal' ? (
-                      <Link
-                        key={edge.node.id}
-                        to={edge.node.url}
-                        className="navbar-item"
-                      >
-                        {edge.node.title}
-                      </Link>
-                    ) : (
-                      <a
-                        key={edge.node.id}
-                        className="navbar-item"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={edge.node.url}
-                      >
-                        {edge.node.title}
-                      </a>
-                    )
-                  })
                 }
-              />
-            </div>
+              `}
+              render={data =>
+                data.allMainMenuJson.edges.map(edge => {
+                  return edge.node.type === 'internal' ? (
+                    <Link
+                      key={edge.node.id}
+                      to={edge.node.url}
+                      className="navbar-item"
+                    >
+                      {edge.node.title}
+                    </Link>
+                  ) : (
+                    <a
+                      key={edge.node.id}
+                      className="navbar-item"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={edge.node.url}
+                    >
+                      {edge.node.title}
+                    </a>
+                  )
+                })
+              }
+            />
           </div>
         </div>
       </nav>

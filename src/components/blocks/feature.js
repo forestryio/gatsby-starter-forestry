@@ -4,8 +4,8 @@ const Feature = ({ block }) => (
   <section
     className={
       block.background
-        ? `hero is-medium is-${block.background}`
-        : 'hero is-medium'
+        ? `block-feature hero is-medium is-${block.background}`
+        : 'block-feature hero is-medium'
     }
   >
     {console.log(block)}
