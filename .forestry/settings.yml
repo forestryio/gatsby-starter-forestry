@@ -41,7 +41,9 @@ build:
   preview_command: npm run forestry:publish
   publish_command: npm run forestry:publish
   preview_env:
-  - GATSBY_WEBPACK_PUBLICPATH=/
+  - PATH_PREFIX=/
+  publish_env:
+  - PATH_PREFIX=/
   preview_output_directory: public
   output_directory: public
   instant_preview_command: npm run forestry:preview
