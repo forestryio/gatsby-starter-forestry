@@ -23,6 +23,7 @@ class ListTemplate extends React.Component {
         <section className="section page-content">
           <div class="container article-header has-text-centered">
             <h1 class="title is-1">{post.frontmatter.title}</h1>
+            <hr />
           </div>
           <main className="container content-container">
             <div

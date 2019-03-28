@@ -26,6 +26,7 @@ class SingleTemplate extends React.Component {
                 {post.frontmatter.date}
               </em>
             )}
+            <hr />
           </div>
           <main className="container content-container">
             <div
