@@ -1,7 +1,6 @@
 ---
 label: block__3col
 hide_body: false
-is_partial: true
 display_field: title
 fields:
 - type: text

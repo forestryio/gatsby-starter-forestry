@@ -1,7 +1,6 @@
 ---
 label: Main Menu
 hide_body: false
-is_partial: false
 fields:
 - name: main_menu
   label: Main menu

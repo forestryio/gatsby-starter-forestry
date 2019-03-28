@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Content
 - type: directory
   path: src/pages
   label: Pages
@@ -21,6 +23,8 @@ sections:
   new_doc_ext: md
   templates:
   - post
+- type: heading
+  label: Config
 - type: document
   path: src/data/main_menu.json
   label: Nav Menu
@@ -34,8 +38,10 @@ use_front_matter_path: false
 file_template: ":filename:"
 instant_preview: true
 build:
-  preview_command: npm run forestry:preview
+  preview_command: npm run forestry:publish
   publish_command: npm run forestry:publish
   preview_env:
   - GATSBY_WEBPACK_PUBLICPATH=/
+  preview_output_directory: public
   output_directory: public
+  instant_preview_command: npm run forestry:preview
