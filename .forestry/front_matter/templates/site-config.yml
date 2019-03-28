@@ -17,19 +17,12 @@ fields:
   type: textarea
   hidden: false
   default: ''
-- name: copyright
-  label: Copyright
-  type: field_group
-  fields:
-  - name: name
-    label: Name
-    type: text
-    hidden: false
-    default: ''
-  - name: url
-    label: Url
-    type: text
-    hidden: false
-    default: ''
+- name: footer
+  label: Footer
+  type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: inline_html
   hidden: false
   default: ''

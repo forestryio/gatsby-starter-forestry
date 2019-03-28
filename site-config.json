@@ -2,8 +2,5 @@
   "pathPrefix": "/",
   "title": "Forestry Gatsby Demo",
   "description": "This website is meant to demonstrate some of the features of Forestry's CMS and how it integrates with the Gatsby static site generator, but you are encouraged to copy it, hack on it, and make it your own!",
-  "copyright": {
-    "name": "Forestry.io",
-    "url": "https://forestry.io/"
-  }
+  "footer": "Built with <a href=\"https://forestry.io\" target=\"_blank\">Forestry.io</a>" 
 }

@@ -16,10 +16,7 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
-            copyright {
-              name
-              url
-            }
+            footer
           }
         }
       }
@@ -44,7 +41,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         {children}
-        <Footer copyright={data.site.siteMetadata.copyright} />
+        <Footer content={data.site.siteMetadata.footer} />
       </>
     )}
   />

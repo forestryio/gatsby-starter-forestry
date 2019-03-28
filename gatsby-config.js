@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: config.title,
     description: config.description,
-    copyright: config.copyright,
+    footer: config.footer,
   },
   plugins: [
     {

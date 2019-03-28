@@ -1,15 +1,8 @@
 import React from 'react'
 
-const Footer = ({ copyright }) => (
+const Footer = ({ content }) => (
   <footer className="section site-footer">
-    <div className="container has-text-centered">
-      Copyright {new Date().getFullYear()}{' '}
-      {copyright.url ? (
-        <a href={copyright.url}>{copyright.name}</a>
-      ) : (
-        copyright.name
-      )}
-    </div>
+    <div className="container has-text-centered" dangerouslySetInnerHTML={{__html: content}} />
   </footer>
 )
 
