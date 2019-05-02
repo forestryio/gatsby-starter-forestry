@@ -6,6 +6,8 @@ This starter is based on the [gatsby-starter-blog](https://github.com/gatsbyjs/g
 
 For styling, this project supports SCSS via [gatsby-plugin-sass](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sass), and uses the [Bulma](https://bulma.io/) CSS framework.
 
+[![Import in Forestry](https://assets.forestry.io/import-to-forestryK.svg "Import in Forestry")](https://app.forestry.io/quick-start?repo=forestryio/gatsby-starter-forestry&engine=gatsby)
+
 ## Project structure
 
 - Site-level configuration is stored in `site-config.json` so it can be exposed to Forestry. This file is loaded in `gatsby-config.js` to configure Gatsby.
