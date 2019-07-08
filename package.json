@@ -34,6 +34,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "preview": "gatsby build && gatsby serve",
     "forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0",
     "forestry:publish": "gatsby build --prefix-paths",
     "start": "npm run develop",

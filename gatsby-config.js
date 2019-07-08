@@ -6,8 +6,10 @@ module.exports = {
     title: config.title,
     description: config.description,
     footer: config.footer,
+    siteUrl: config.url,
   },
   plugins: [
+    //'gatsby-url-map',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

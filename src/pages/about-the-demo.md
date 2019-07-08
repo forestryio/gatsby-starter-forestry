@@ -1,6 +1,11 @@
 ---
 title: What is this?
-
+stats:
+    - type: moonboon
+      value: |
+        100
+    - type: hooha
+      value: blarg
 ---
 You're currently viewing a demo site built with [GatsbyJS](https://www.gatsbyjs.org/) and [Forestry](https://forestry.io). This website is meant to demonstrate some of the features of Forestry's CMS and how it integrates with the Gatsby static site generator, but you are encouraged to copy it, hack on it, and make it your own!
 
@@ -30,3 +35,7 @@ Forestry is a content management UI for static sites. Forestry currently support
 Forestry works by importing your static site from a cloud Git provider like GitHub, GitLab, or Bitbucket. You can then use our WYSIWYG and front matter UI to edit your markdown content and data files. When you save your content, Forestry creates a commit and pushes it back to your Git provider. This capability allows Forestry to be used alongside other workflows a team may be using to edit their static sites.
 
 [Learn more at Forestry.io »](https://forestry.io)
+
+<!-- FOOBAROO -->
+
+<span data-id="foobaroo"></span>
