@@ -33,7 +33,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-normalize-paths`,
+          `@forestryio/gatsby-remark-normalize-paths`,
           {
             resolve: `gatsby-remark-images`,
             options: {
