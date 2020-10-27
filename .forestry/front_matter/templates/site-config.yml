@@ -23,6 +23,6 @@ fields:
   config:
     wysiwyg: true
     schema:
-      format: inline_html
+      format: html-blocks
   hidden: false
   default: ''
