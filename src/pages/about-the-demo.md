@@ -7,7 +7,7 @@ You're currently viewing a demo site built with [GatsbyJS](https://www.gatsbyjs.
 [About Gatsby »](/about-the-ssg)
 
 ## Demo Features
-This demo is heavily influenced by Gatsby's [tutorial for using markdown](https://www.gatsbyjs.org/docs/adding-markdown-pages/) and Kyle Mathews' [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog). It is intended to serve as a starting point for developing markdown websites using Gatsby. Among its features are:
+This demo is heavily influenced by Gatsby's [tutorial for using Markdown](https://www.gatsbyjs.org/docs/adding-markdown-pages/) and Kyle Mathews' [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog). It is intended to serve as a starting point for developing markdown websites using Gatsby. Among its features are:
 
 - Pages created from markdown files
 - _List_ and _single_ templates (add an `index.md` file to a directory to create a list page for the directory's contents)
@@ -21,12 +21,12 @@ This demo is heavily influenced by Gatsby's [tutorial for using markdown](https:
 2. [Sign up for a Forestry account](https://app.forestry.io/signup)
 3. Click the **Add Site** button, connect to your Git provider, and select the repo you just forked to begin the import process.
 
-Alternatively, you can have Forestry copy and import this project for your with our [quick start](https://app.forestry.io/quick-start?repo=forestryio/gatsby-starter-forestry&branch=master&engine=gatsby).
+Alternatively, you can have Forestry copy and import this project for your with our [quick importer](https://app.forestry.io/quick-start?repo=forestryio/gatsby-starter-forestry&branch=master&engine=gatsby).
 
 ## About Forestry
 
-Forestry is a content management UI for static sites. Forestry currently supports Hugo, Jekyll, VuePress, and Gatsby, with support for more static site generators planned.
+Forestry is a content management UI for static sites. Forestry currently works with any SSG, as long as your content is stored in Markdown, YAML or JSON files.
 
-Forestry works by importing your static site from a cloud Git provider like GitHub, GitLab, or Bitbucket. You can then use our WYSIWYG and front matter UI to edit your markdown content and data files. When you save your content, Forestry creates a commit and pushes it back to your Git provider. This capability allows Forestry to be used alongside other workflows a team may be using to edit their static sites.
+Forestry works by importing your static site from a cloud Git provider like GitHub, GitLab, or Bitbucket. You can then use our WYSIWYG and front matter UI to edit your Markdown content and data files. When you save your content, Forestry creates a commit and pushes it back to your Git provider. This capability allows Forestry to be used alongside other workflows a team may be using to edit their static sites.
 
 [Learn more at Forestry.io »](https://forestry.io)

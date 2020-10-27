@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/images`,
         name: 'images',
       },
     },
@@ -36,11 +36,6 @@ module.exports = {
           // gatsby-remark-relative-images must go before gatsby-remark-images
           {
             resolve: `gatsby-remark-relative-images`,
-            options: {
-              // [Optional] The root of "media_folder" in your config.yml
-              // Defaults to "static"
-              staticFolderName: 'src'
-            },
           },
           'gatsby-remark-copy-linked-files',
           {
