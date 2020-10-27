@@ -21,6 +21,9 @@ fields:
 - type: file
   name: image
   label: Image
+  default: "/images/gatsby-astronaut.png"
+  config:
+    maxSize: 2
 - type: select
   name: background
   config:

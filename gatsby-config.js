@@ -11,6 +11,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/static/images`,
+        name: 'images',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
       },
@@ -23,24 +30,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/images`,
-        name: 'images',
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `@forestryio/gatsby-remark-normalize-paths`,
+          // gatsby-remark-relative-images must go before gatsby-remark-images
           {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 800,
-            },
+            resolve: `gatsby-remark-relative-images`,
           },
           'gatsby-remark-copy-linked-files',
+          {
+            resolve: `gatsby-remark-images`,
+            options: { maxWidth: 800 },
+          },
         ],
       },
     },

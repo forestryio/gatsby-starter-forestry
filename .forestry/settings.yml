@@ -32,22 +32,16 @@ sections:
   path: site-config.json
   label: Site Config
 upload_dir: src/images
-public_path: "/src/images"
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
-instant_preview: true
 build:
-  preview_command: npm run forestry:publish
-  publish_command: npm run forestry:publish
   preview_env:
   - PATH_PREFIX=/
-  publish_env:
-  - PATH_PREFIX=/
   preview_output_directory: public
-  output_directory: public
-  instant_preview_command: npm run forestry:preview
   install_dependencies_command: npm install
-  preview_docker_image: node:10
+  preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
+  instant_preview_command: npm run forestry:preview
